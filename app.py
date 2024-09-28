@@ -32,7 +32,7 @@ def submit_gmail():
     return send_file(pdf_output, as_attachment=True, download_name="emails.pdf", mimetype='application/pdf')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
 
 
 # from flask import Flask, request, jsonify, send_file
