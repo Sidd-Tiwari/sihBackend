@@ -8,7 +8,7 @@ CORS(app)
 @app.route('/')
 def home():
     return "Hello, World!"
-@app.route('/submit_gmail', methods=['GET','POST'])
+@app.route('/submit_gmail', methods=['POST'])
 def submit_gmail():
     # Get the JSON data from the POST request
     data = request.get_json()
