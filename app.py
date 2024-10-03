@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
-from gmail import getMailsAndMakePDF  # Import the function from gmail.py
+from gmail import fetch_emails  # Import the function from gmail.py
 import io
 
 app = Flask(__name__)
