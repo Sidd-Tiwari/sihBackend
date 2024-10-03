@@ -22,7 +22,7 @@ def submit_gmail():
         return jsonify({"status": "error", "message": "Email and password are required!"}), 400
 
     # Call the function to generate the PDF in memory
-    pdf_output = getMailsAndMakePDF(email, password)
+    pdf_output = fetch_emails(email, password)
 
     # If PDF generation failed (e.g., login failed), return an error
     if pdf_output is None:
